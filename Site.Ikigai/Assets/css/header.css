@@ -1,0 +1,15 @@
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+
+
+nav ul {
+	display: flex;
+ 	justify-content: space-between;
+    max-width: 720px;
+    margin: 0 auto;
+	list-style-type: none;
+}
