@@ -27,41 +27,57 @@ header {
   width: 100%;
 }
 /* menu*/
+ input{
+ 	display: none;
+ }
+
 nav img {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
 }
+
 nav {
-  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-  margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.7);
 }
+
 nav ul {
   text-align: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   margin: auto;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
-  padding: 15px 15px 0px 15px;
-  font-family: "Open Sans";
+  padding: 10px 10px 3px 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   text-transform: uppercase;
   color: black;
   font-size: 18px;
   text-decoration: none;
   display: block;
+
 }
+
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-top: 3px solid red;
+  background: rgba(255, 255, 255, 0.0);
+  border-top: 4px solid red;
+  transition: .4s linear;
+  border-radius: 1px;
+  transform: translateY(-8px);
+  
 }
+
 #currentLink {
   border-top: 3px solid red;
   background-color: #00000050;
 }
 /*fin menu*/
+
 
 /*slideshow*/
 #overSlideshow {
@@ -115,13 +131,6 @@ nav ul li a:hover {
 }
 .slide-prev:hover, .slide-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-.slide-number {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 /************CSS Animation***********/
 .animated {
@@ -183,7 +192,12 @@ nav ul li a:hover {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   height: 280px;
-
+  transition: transform .5s ease;
+}
+.grid img:hover {
+   -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 .grid:after {
   content: "";
@@ -228,8 +242,7 @@ nav ul li a:hover {
 }
 .item:hover .item-overlay.bottom {
   bottom: 20%;
-}
-.hoverbutton {
+}.myBtn {
   background-color: #e64242;
   color: black;
   font-size: 14px;
@@ -237,46 +250,257 @@ nav ul li a:hover {
   font-family: 'Libre Baskerville', cursive;
   width: 100px;
 margin: 20px auto 0 auto;
-border-radius: 5%;
-  
-}
-.hoverbutton a {
-  color: white;
-  text-decoration: none;
-}
-.hoverbutton a:visited {
-  text-decoration: none;
-  color: white;
+	border-radius: 5%;}
+.more {
+	display: none;
 }
 /* fin gallery*/
 
 /*footer*/
 footer {
 	width: 100%;
-	background-color: #121212;
-	height: 200px;
-	bottom: 0;
+	background-color: #1e1a1a;
 	color: white;
+}
+.reseaux_sociaux img {
+	width: 25px;
+	height: 25px;
+	
+}
+.reseaux_sociaux
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid white 1px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #4a4343;
+}
+
+.reseaux_sociaux ul
+{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+.mentions
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15px;
+
+}
+#logobottom
+{
+	width: 100px;
+	height: 100px;
+	bot: 0;
+	left: 0;
+	position: absolute;
+}
+
+.Japon
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.France
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: solid white 1px;
+	padding-left: 360px;
 }
 /*					MEDIA Q-Q-Q-QUERIIIIIIES              */
 @media all and (max-width: 1024px) {
-  .parent {
+  	nav img{
+ 		display: none;
+ 	}
+	nav { 
+		position: relative;
+		width: 100%;
+	}
+
+	a:hover{
+	border-bottom: 4px solid red;
+  	transition: .4s linear;
+
+	}
+	.parent {
     width: 100%;
+		margin: auto;
   }
   .grid img {
     width: 100%;
-	  margin: auto;
-  }
+	}
   .slideshow-container {
     display: none;
   }
-	nav { 
-		display: none;
-	}
 	#overSlideshow {
 		position: inherit;
 		width: 100%;
 		margin: 0 auto;
+		margin-top: 5%;
 	}
+	body {
+		margin: 0;
+	}
+
+	
+}
+/*Responsive header */
+
+@media all and (max-width: 640px) {
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  background-color: rgba(255,255,255,0.80);
+  width: 34px;
+  height: 24px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
 
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ Just a quick hamburger
+ */
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+}
