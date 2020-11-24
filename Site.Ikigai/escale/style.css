@@ -1,0 +1,87 @@
+
+body
+{
+	
+  font-family: Indie Flower;
+    color:red;
+	 background-image: url("japanese-culture.jpg");
+  background-repeat: no-repeat;
+
+}
+.container
+{display: flex;
+  justify-content:center;
+
+}
+form
+{
+  opacity: 0.8;
+  background-color: gray;
+  width: 300px;
+
+}
+
+
+
+
+p {
+ color:red;
+  font-weight: bold;
+ ,font-family: Indie Flower;
+	justify-content: center;
+  margin-top: 0px;
+}
+ 
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+legend {
+  padding: 0px 0px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+ 
+label {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+
+
+ 
+input:fored
+{
+
+  background: #eaeaea;
+}
+
+ 
+input, textarea
+ {
+  width: 249px;
+}
+ 
+textarea
+ {
+  height: 100px;
+}
+ 
+select 
+{
+  width: 254px;
+}
+ 
+input[type=checkbox]
+ {
+  width: 10px;
+}
+ 
+input[type=submit]
+ {
+  width: 150px;
+  padding: 10px;
+}
