@@ -2,22 +2,32 @@
 body
 {
 	
-  font-family: Indie Flower;
-    color:red;
+font-family:LibreBaskerville;
+    color:gray;
 	 background-image: url("japanese-culture.jpg");
   background-repeat: no-repeat;
+
+}
+h1
+{
+ 
+ font-family:Indie Flower;
+ color: black;
 
 }
 .container
 {display: flex;
   justify-content:center;
 
+
 }
 form
 {
+
   opacity: 0.8;
-  background-color: gray;
+  background-color:#FFB74D ;
   width: 300px;
+
 
 }
 
@@ -25,9 +35,9 @@ form
 
 
 p {
- color:red;
+ color:black;
   font-weight: bold;
- ,font-family: Indie Flower;
+ font-family:LibreBaskerville;
 	justify-content: center;
   margin-top: 0px;
 }
