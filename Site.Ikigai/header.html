@@ -7,6 +7,7 @@
 		<title>voyage-Ikigai</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+		<link rel="stylesheet" media="screen and (max-device-width: 640px)" href="assets/css/mobile_resolution.css" />
 
 	</head>
 
@@ -14,9 +15,25 @@
 
 		<header>
 
-
-				<nav>
-					<ul>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+					<ul id="menu">
 
 						<li><a href="https://www.google.fr" target="_blank" class="home">Home</a></li>
 						<li><a href="https://www.google.fr" target="_blank">Destinations</a></li>
@@ -27,7 +44,7 @@
 					</ul>
 
 				</nav>
-
+</div>
 		</header>
 
 
