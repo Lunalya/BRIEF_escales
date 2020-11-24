@@ -1,59 +1,63 @@
 
 body
 {
-	
 font-family:LibreBaskerville;
-    color:gray;
-	 background-image: url("japanese-culture.jpg");
+color:gray;
+background-image: url("japanese-culture.jpg");
   background-repeat: no-repeat;
-
 }
+
+
 h1
 {
- 
  font-family:Indie Flower;
  color: black;
-
 }
+
+
 .container
 {display: flex;
   justify-content:center;
-
-
 }
+
+
 form
 {
-
+border-radius: 10px;
   opacity: 0.8;
   background-color:#FFB74D ;
   width: 300px;
-
-
 }
 
 
 
-
-p {
+p
+{
  color:black;
-  font-weight: bold;
+ font-weight: bold;
  font-family:LibreBaskerville;
-	justify-content: center;
+justify-content: center;
   margin-top: 0px;
 }
+
  
-fieldset {
+fieldset 
+{
   margin-bottom: 15px;
   padding: 10px;
 }
  
-legend {
+
+legend 
+{
   padding: 0px 0px;
   font-weight: bold;
   font-variant: small-caps;
 }
+
  
-label {
+label
+{
   width: 200px;
   display: inline-block;
   vertical-align: top;
@@ -65,8 +69,7 @@ label {
  
 input:fored
 {
-
-  background: #eaeaea;
+background: #eaeaea;
 }
 
  
@@ -74,21 +77,25 @@ input, textarea
  {
   width: 249px;
 }
+
  
 textarea
  {
   height: 100px;
 }
+
  
 select 
 {
   width: 254px;
 }
+
  
 input[type=checkbox]
  {
   width: 10px;
 }
+
  
 input[type=submit]
  {
