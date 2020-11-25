@@ -2,58 +2,103 @@
 
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	 <meta name="viewport" content="width=device-width"/>
+<link href="assets/css/contact.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>formulaire</title>
+<title>Ikigai Travel Agency</title>
 </head>
 <body>
+<header>
+  <nav role="navigation">
+    <div id="menuToggle"> 
+      <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+      <input type="checkbox" id="tick"/>
+      <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    --> 
+      <span></span> <span></span> <span></span>
+      <ul id="menu">
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <img src="assets/images/ikigai.png" width="115px" height="115px" id="logo">
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
+<form action="#">
 
-	<center><h1>CONTACTEZ NOUS</h1></center>
-	<div class="container">
-	
-
-	
-	<form id="myform" class="cssform" action="style.css">
-
-	<center><div id="container"> 
-		<div class="items">
-			<p><label for="user">Nom :</label></p>
-	<div class="items">
-		<input type="text" id="user" value="" /></p></div></center>
-
-	<center><div class="items">
-		     <p><label for="emailaddress">Email :</label><p>
-		     	<div class="items">
-	<input type="text" id="emailaddress" value="" /></p></div></center>
-
-	<center><div class="items">
-		       <p><label for="telephonne">Téléphonne :</label>
-		       	<div class="items">
-
-
-	<input type="text" id="téléphonne" value="" /></p></div></center>
-	
-
-
-	<center><p><label for="comments">Message :</label></center>
-	<center><textarea id="comments" rows="5" cols="25"></textarea></p></center>
-	
-	
-
-
-	
-	
-	<center><p><label for="terms">Conditions g&eacute;n&eacute;rales accept&eacute;es</label>
-	<input type="checkbox" id="terms" class="boxes" /></p></center>
-	<center><p><div style="margin-left: 150px;">
-		<input type="submit" value="Envoyer" />
-		
-	</p></center>
+  <section>
+<center>
+  <h1>CONTACT US</h1>
+</center>
+    <div>You can also join us by phone, numeros are on the bottom of the page.</div>
+  </section>
+  
+  <div>
+    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <div>
+      <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="Field3">
+      Email
+    </label>
+    <div>
+      <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="Field4">
+      Message
+    </label>
+  
+    <div>
+      <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+    
+  <div>
+    <fieldset>
+    
+      <legend id="title5" class="desc">
+        Sujet
+      </legend>
+      
+      <div>
+      	<input id="radioDefault_5" name="Field5" type="hidden" value="">
+      	<div>
+      		<input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+      		<label class="choice" for="Field5_0">Reservation</label>
+      	</div>
+        <div>
+        	<input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+        	<label class="choice" for="Field5_1">Information</label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+        	<label class="choice" for="Field5_2">Facturation</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <div>
+		<div>
+  		<input id="saveForm" name="saveForm" type="submit" value="Submit">
+    </div>
+	</div>
+  
 </form>
-</div>
-
-
 </body>
 </html>

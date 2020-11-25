@@ -1,108 +1,298 @@
-
-body
-{
-font-family:LibreBaskerville;
-color:gray;
-background-image: url("japanese-culture.jpg");
-  background-repeat: no-repeat;
+@font-face {
+    font-family: 'libre';
+    src: url('../fonts/LibreBaskerville-Regular.ttf');
 }
-
-
-h1
-{
- font-family:Indie Flower;
- color: black;
+/* reset default browser CSS */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+	font-family: 'libre', serif;
 }
+/*get rid of the default button styling */
 
-
-.container
-{display: flex;
-  justify-content:center;
+html, body {
+  width: 100%;
+  height: 100%;
 }
-
-
-form
-{
-border-radius: 10px;
-  opacity: 0.8;
-  background-color:#FFB74D ;
-  width: 300px;
+/* menu*/
+#tick {
+  display: none;
 }
-
-
-
-p
-{
- color:black;
- font-weight: bold;
- font-family:LibreBaskerville;
-justify-content: center;
-  margin-top: 0px;
+nav img {
+  width: 110px;
+  height: 110px;
 }
-
- 
-fieldset 
-{
-  margin-bottom: 15px;
-  padding: 10px;
+nav {
+  background-color: rgba(255, 255, 255, 0.7);
 }
- 
-
-legend 
-{
-  padding: 0px 0px;
-  font-weight: bold;
-  font-variant: small-caps;
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  margin: auto;
 }
-
- 
-label
-{
-  width: 200px;
+nav ul li {
   display: inline-block;
-  vertical-align: top;
-  margin: 6px;
 }
- 
-
-
- 
-input:fored
-{
-background: #eaeaea;
-}
-
- 
-input, textarea
- {
-  width: 249px;
-}
-
- 
-textarea
- {
-  height: 100px;
-}
-
- 
-select 
-{
-  width: 254px;
-}
-
- 
-input[type=checkbox]
- {
-  width: 10px;
-}
-
- 
-input[type=submit]
- {
+nav ul li a {
+  padding: 10px 10px 3px 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
   display: block;
+}
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.0);
+  border-top: 4px solid red;
+  transition: .4s linear;
+  border-radius: 1px;
+  transform: translateY(-8px);
+}
+#currentLink {
+  border-top: 3px solid red;
+  background-color: #00000050;
+}
+/*fin menu*/
+@media all and (max-width: 1024px) {
+  nav img {
+    display: none;
+  }
+  nav {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  width: 150px;
-  padding: 10px;
+    width: 100%;
+  }
+  a:hover {
+    border-bottom: 4px solid red;
+    transition: .4s linear;
+  }
+}
+/*Responsive header */
+@media all and (max-width: 640px) {
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.80);
+    width: 34px;
+    height: 24px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover {
+    color: tomato;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  /*
+ Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  /*
+ * And let's slide it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+}
+/* END MENUS */
+body {
+  font-family: LibreBaskerville;
+  color: gray;
+  background-image: url("../../assets/images/japanese-culture.jpg");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+form {
+	width: 50%;
+	margin: 10% auto;
+	background-color: rgba(225,213,182,0.60);
+	border-radius: 2%;
+	color: black;
+}
+form section {
+  margin: 0 0 20px 0; 
+}
+form section div {
+  font-size: 90%;
+  color: red;
+}
+form section h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+#Field4 {
+	width: 80%;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+	form {
+		width: 90%;
+	}
+	input {
+		width: 90%;
+	}
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
 }
