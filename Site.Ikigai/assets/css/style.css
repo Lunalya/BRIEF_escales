@@ -317,6 +317,41 @@ footer {
 	border-left: solid white 1px;
 	padding-left: 360px;
 }
+
+/*       Media queries footer       */
+@media all and (max-width: 1024px)
+{
+    .reseaux_sociaux
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    .reseaux_sociaux ul
+    {
+        flex-direction: space-around;
+    }
+	
+	.mentions
+	{
+		width: auto;
+		flex-direction: column;
+	}
+	
+	.Japon
+	{
+		
+		flex-direction: column;
+	}
+	
+	.France
+	{
+		
+		display: none;
+		border-left: none;
+	}
+}
+
 /*					MEDIA Q-Q-Q-QUERIIIIIIES              */
 @media all and (max-width: 1024px) {
   	nav img{
