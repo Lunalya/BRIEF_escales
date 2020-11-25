@@ -12,10 +12,6 @@
 input, button, submit {
   border: none;
 }
-html, body {
-  width: 100%;
-  height: 100%;
-}
 p {
   font-family: 'Libre Baskerville', serif;
 }
@@ -87,8 +83,6 @@ nav ul li a:hover {
 
   display: none;
   font-family: 'Libre Baskerville', Arial, Helvetica;
-
-}
 
 }
 .mySlides {
@@ -164,8 +158,7 @@ nav ul li a:hover {
 /*end slideshow*/
 #fondtitle {
 	width: 100%;
-	height: 600px;
-
+	height: 500px;
 	background: url(../images/vkanagawa.jpg) no-repeat center;
   background-size: cover;
 	display: flex;
@@ -216,11 +209,6 @@ nav ul li a:hover {
    -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
-}
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /**** Overlay of gallery items ***/
 .item h3 {
@@ -284,68 +272,101 @@ nav ul li a:hover {
 }
 /* fin gallery*/
 /*footer*/
-footer {
-  width: 100%;
-  background-color: #1e1a1a;
-  color: white;
+ul {
+    list-style: none;
+    padding-left: 0;
 }
-.reseaux_sociaux img {
+footer h4 {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.375rem;
+}
+
+.container-bottom {
+  flex: 1;
+}
+
+footer {
+    background-color: #1e1a1a;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+	    font-family: 'Libre Baskerville', serif;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-main {
+    padding: 1rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-item {
+    padding: 1rem;
+    min-width: 12.5rem /*200px*/;
+}
+.footer-main .footer-item:first-child {
+	border-right: 2px solid white;
+}
+.footer-social {
+    padding: 0 1.75rem;
+    background-color: #4a4343;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+.footer-social ul li {
+    margin: 0.5rem;
+    font-size: 1.0rem;
+}
+.footer-social img {
 	width: 25px;
 	height: 25px;
-
-}
-.reseaux_sociaux
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-bottom: solid white 1px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	background-color: #4a4343;
 }
 
-.reseaux_sociaux ul
-{
-	display: flex;
-	justify-content: center;
-	list-style-type: none;
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .footer-main {
+        justify-content: space-around;
+    }
 }
-.mentions
-{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 15px;
-
-}
-#logobottom
-{
-	width: 100px;
-	height: 100px;
-	bot: 0;
-	left: 0;
-	position: absolute;
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .footer-main {
+        justify-content: space-evenly;
+    }
+	.container-bottom {
+		margin-top: 2%;
+	}
 }
 
-.Japon
-{
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+/*mentions légales*/
+.footer-legal {
+    padding: 0.2375rem 1.275rem;
+    background-color: #1a1a1a;
 }
-.France
-{
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-left: solid white 1px;
-	padding-left: 360px;
+.footer-legal ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-legal ul li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+.footer-legal ul li:nth-last-child(2) {
+    flex: 1;     
 }
 /*					MEDIA Q-Q-Q-QUERIIIIIIES              */
 @media all and (max-width: 1024px) {
+	body {
+		margin-left: 5%;
+	}
   	nav img{
  		display: none;
  	}
@@ -361,6 +382,7 @@ footer {
 	}
 	.parent {
     width: 100%;
+		margin: 0;
   }
   a:hover {
     border-bottom: 4px solid red;
@@ -370,6 +392,9 @@ footer {
     width: 100%;
     margin: auto;
   }
+	.grid {
+			  margin: 0;
+		grid-gap: 0}
   .grid img {
     width: 100%;
   }
@@ -407,9 +432,7 @@ footer {
   justify-content: center;
   text-align: center;
   font-size: 2.0em;
-}
-
-
+  }
 }
 /*Responsive header */
 @media all and (max-width: 640px) {
@@ -517,4 +540,5 @@ footer {
 {
   transform: none;
 }
+	}
 }
