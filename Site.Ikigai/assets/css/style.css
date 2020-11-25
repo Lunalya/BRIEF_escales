@@ -186,18 +186,12 @@ nav ul li a:hover {
   align-items: stretch;
 		margin: 1% 0 1% 0;
 	margin: auto;
+	grid-gap: 2%;
 }
 .grid img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
   height: 280px;
-  transition: transform .5s ease;
-}
-.grid img:hover {
-   -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
 }
 .grid:after {
   content: "";
@@ -236,6 +230,12 @@ nav ul li a:hover {
   overflow: hidden;
   width: 100%;
   max-width: 540px;
+  transition: transform .5s ease;
+}
+.item:hover {
+   -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 .item img {
   max-width: 100%;
