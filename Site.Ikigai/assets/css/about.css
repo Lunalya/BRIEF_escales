@@ -88,26 +88,6 @@ nav ul li a:hover {
 
 }
 
-.btn{
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	padding: 10px 10px;
-	margin-left: 43%;
-	margin-right: 43%;
-	font-family: sans-serif;
-	font-size: large;
-	font-weight: 500;
-	outline: none;
-	border: none;
-	background: white;
-	border-radius: 10px;
-	transition: 0.3 ease;
-
-}
-.btn:hover {
-	background: #d63227;
-	color: white;
 
 }
 p{
@@ -134,21 +114,6 @@ img{
 
 	}
 
-  .btn{
-    display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 10px 10px;
-  width: 200px;
-  font-family: sans-serif;
-  font-size: large;
-  font-weight: 500;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 10px;
-  transition: 0.3 ease;
-  }
 
 }
 
