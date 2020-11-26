@@ -164,7 +164,7 @@ nav ul li a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  margin-bottom: 30px; 
+  margin-bottom: 2%; 
 }
 
 #midtitle{
@@ -190,7 +190,6 @@ nav ul li a:hover {
 .parent {
   width: 1000px;
   margin: auto;
-  margin-bottom: 30px;
 }
 .grid {
   display: grid;
@@ -343,7 +342,7 @@ a:hover {
         justify-content: space-evenly;
     }
 	.container-bottom {
-		margin-top: 2%;
+		margin-top: 4%;
 	}
 }
 
