@@ -33,8 +33,8 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "80px";
 
   } else {
-    document.getElementById("logo").style.width = "150px";
-    document.getElementById("logo").style.height = "150px";
+    document.getElementById("logo").style.width = "110px";
+    document.getElementById("logo").style.height = "110px";
 
   }
 }
