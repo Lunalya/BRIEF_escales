@@ -2,6 +2,10 @@
     font-family: 'libre';
     src: url('../fonts/LibreBaskerville-Regular.ttf');
 }
+@font-face {
+    font-family: 'indie';
+    src: url('../fonts/IndieFlower.ttf');
+}
 /* reset default browser CSS */
 * {
   -moz-box-sizing: border-box;
@@ -17,6 +21,13 @@ html, body {
   width: 100%;
   height: 100%;
 }
+h1 {
+	font-family: "indie", serif;
+}
+p {
+	text-align: center;
+	font-weight: 300;
+}
 /* menu*/
 #tick {
   display: none;
@@ -26,7 +37,7 @@ nav img {
   height: 110px;
 }
 nav {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(248,245,238, 0.7);
 }
 nav ul {
   text-align: center;
@@ -182,17 +193,23 @@ nav ul li a:hover {
 body {
   font-family: LibreBaskerville;
   color: gray;
-  background-image: url("../../assets/images/japanese-culture.jpg");
+  background-image: url("../../assets/images/japanese-garden-2898777_1920.jpg");
   background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 form {
-	width: 50%;
-	margin: 10% auto;
-	background-color: rgba(225,213,182,0.60);
+	width: 40%;
+	margin: 5% auto;
+	background-color: rgba(248,245,238,0.20);
 	border-radius: 2%;
-	color: black;
+	box-shadow: 10px;
+	color: #fff;
+	transition: 1.5s;
+}
+form:hover {
+	background-color: rgba(248,245,238,0.90);
+	color: #000;
 }
 form section {
   margin: 0 0 20px 0; 
@@ -258,6 +275,13 @@ input[type=password]:focus,
 textarea:focus {
   outline: 0;
   border-color: #4697e4;
+}
+input[type=submit]{
+	width: 80%;
+	height: 2rem;
+	background-color: rgba(183, 0, 0, 0.80);
+	border-radius: 2%;
+	border: none;
 }
 
 @media (max-width: 600px) {
@@ -384,4 +408,8 @@ a:hover {
 }
 .footer-legal ul li:nth-last-child(2) {
     flex: 1;     
+}
+.footer-legal img {
+	width: 25px;
+	height: 25px;
 }
