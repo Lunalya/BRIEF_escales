@@ -4,7 +4,17 @@
 <title> IKIGAI travel Agency </title>
 <link rel="stylesheet" href="../assets/css/destinations.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- script our background aléa--> 
+<script type="text/javascript"> 
+var totalCount = 6;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = '../assets/images/destinations/'+num+'.jpg';
+document.body.style.backgroundRepeat = "repeat";// Background repeat
+}
+</script>
 </head>
 <header>
   <nav role="navigation">
@@ -32,50 +42,53 @@
     <p> <img src="../assets/images/destinations/senzu.jpg" align="left" alt="photo Senzu"/> <em>Shizuoka-shi</em>, [ɕizɯꜜoka]) is the capital city of Shizuoka Prefecture, Japan, and the prefecture's second-largest city in both population and area. It has been populated since prehistoric times. As of 1 December 2019, the city had an estimated population of 690,881 in 106,087 households,and a population density of 490 inhabitants per square kilometre (1,300/sq mi). The city's name is made up of two kanji, 静 shizu, meaning "still" or "calm"; and 岡 oka, meaning "hill(s)". </p>
     <a href="https://www.google.com/maps/place/Senzu,+Kawanehon,+Haibara+District,+Shizuoka+428-0411,+Japan/@35.1410011,138.1133723,13z/data=!3m1!4b1!4m5!3m4!1s0x601b755d719a8769:0x59780c43f198a64c!8m2!3d35.1416652!4d138.1101299" target="_blank"> <img src="../assets/images/destinations/senzu.png" alt="capture d'écran carte Senzu"> </a> </div>
 </div>
-    <div class="container-bottom">
-<footer>
-  <section class="footer-social">
-    <ul>
-      <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
-      <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
-      <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
-    </ul>
-  </section>
-<!--         -->
-  <section class="footer-main">
-    <div class="footer-item">
-      <h4>Site Map</h4>
-                <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="../aboutus.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>75 Avenue du Talent</p>
-      <p>11100 NARBONNE</p>
-      <p>+33 4 69 42 07 77</p>
-      <p><strong>FRANCE</strong></p>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>541-0057 OSAKA</p>
-      <p>1-5-6 KITA-KYUHOJIMACHI</p>
-      <p>CHUO-KU</p>
-      <p><strong>JAPON</strong></p>
-    </div>
-  </section>
-  <!-- -->
-        <section class="footer-legal">
+<div class="container-bottom">
+  <footer>
+    <section class="footer-social">
+      <ul>
+        <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
+        <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
+        <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
+      </ul>
+    </section>
+    <!--         -->
+    <section class="footer-main">
+      <div class="footer-item">
+        <h4>Site Map</h4>
         <ul>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li>&copy; 2020 Copyright Simplon Galaxy</li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="../aboutus.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-      </section>
-</footer>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>75 Avenue du Talent</p>
+        <p>11100 NARBONNE</p>
+        <p>+33 4 69 42 07 77</p>
+        <p><strong>FRANCE</strong></p>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>541-0057 OSAKA</p>
+        <p>1-5-6 KITA-KYUHOJIMACHI</p>
+        <p>CHUO-KU</p>
+        <p><strong>JAPON</strong></p>
+      </div>
+    </section>
+    <!-- -->
+    <section class="footer-legal">
+      <ul>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li>&copy; 2020 Copyright Simplon Galaxy</li>
+      </ul>
+    </section>
+  </footer>
 </div>
-    <script src="../assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
+<script type="text/javascript"> 
+ChangeIt();
+</script>
 </html>

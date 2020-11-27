@@ -4,7 +4,17 @@
 <title> IKIGAI travel Agency </title>
 <link rel="stylesheet" href="../assets/css/destinations.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- script our background aléa--> 
+<script type="text/javascript"> 
+var totalCount = 6;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = '../assets/images/destinations/'+num+'.jpg';
+document.body.style.backgroundRepeat = "repeat";// Background repeat
+}
+</script>
 </head>
 <header>
   <nav role="navigation">
@@ -30,53 +40,55 @@
     <h1> Destination </h1>
     <h2> City Osaka </h2>
     <p> <img src="../assets/images/destinations/osaka.jpg" align="left" alt="photo Osaka"/> <em>Ōsaka-shi </em>, pronounced [oːsakaɕi]; commonly just 大阪, Ōsaka [oːsaka] (listen)) is a designated city in the Kansai region of Honshu in Japan. It is the capital city of Osaka Prefecture and the largest component of the Keihanshin Metropolitan Area, the second-largest metropolitan area in Japan and among the largest urban areas in the world with more than 20 million inhabitants. Osaka was traditionally considered Japan's economic hub. By the Kofun period (300–538) it had developed into an important regional port, and in the 7th and 8th centuries, it served briefly as the imperial capital. Osaka continued to flourish during the Edo period (1603–1867) and became known as a center of Japanese culture. </p>
-    
     <a href="https://www.google.com/maps/place/Osaka,+Japan/@34.6776434,135.4860646,11z/data=!3m1!4b1!4m5!3m4!1s0x6000e6553406e2e1:0xc55bc16ee46a2fe7!8m2!3d34.6937249!4d135.5022535" target="_blank"> <img src="../assets/images/destinations/osaka.png" alt="capture d'écran carte Osaka"> </a> </div>
 </div>
-    <div class="container-bottom">
-<footer>
-  <section class="footer-social">
-    <ul>
-      <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
-      <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
-      <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
-    </ul>
-  </section>
-<!--         -->
-  <section class="footer-main">
-    <div class="footer-item">
-      <h4>Site Map</h4>
-                <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="../aboutus.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>75 Avenue du Talent</p>
-      <p>11100 NARBONNE</p>
-      <p>+33 4 69 42 07 77</p>
-      <p><strong>FRANCE</strong></p>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>541-0057 OSAKA</p>
-      <p>1-5-6 KITA-KYUHOJIMACHI</p>
-      <p>CHUO-KU</p>
-      <p><strong>JAPON</strong></p>
-    </div>
-  </section>
-  <!-- -->
-        <section class="footer-legal">
+<div class="container-bottom">
+  <footer>
+    <section class="footer-social">
+      <ul>
+        <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
+        <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
+        <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
+      </ul>
+    </section>
+    <!--         -->
+    <section class="footer-main">
+      <div class="footer-item">
+        <h4>Site Map</h4>
         <ul>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li>&copy; 2020 Copyright Simplon Galaxy</li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="../aboutus.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-      </section>
-</footer>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>75 Avenue du Talent</p>
+        <p>11100 NARBONNE</p>
+        <p>+33 4 69 42 07 77</p>
+        <p><strong>FRANCE</strong></p>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>541-0057 OSAKA</p>
+        <p>1-5-6 KITA-KYUHOJIMACHI</p>
+        <p>CHUO-KU</p>
+        <p><strong>JAPON</strong></p>
+      </div>
+    </section>
+    <!-- -->
+    <section class="footer-legal">
+      <ul>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li>&copy; 2020 Copyright Simplon Galaxy</li>
+      </ul>
+    </section>
+  </footer>
 </div>
-    <script src="../assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
+<script type="text/javascript"> 
+ChangeIt();
+</script>
 </html>

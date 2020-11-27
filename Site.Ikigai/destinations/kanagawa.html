@@ -4,7 +4,17 @@
 <title> IKIGAI travel Agency </title>
 <link rel="stylesheet" href="../assets/css/destinations.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- script our background aléa--> 
+<script type="text/javascript"> 
+var totalCount = 6;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = '../assets/images/destinations/'+num+'.jpg';
+document.body.style.backgroundRepeat = "repeat";// Background repeat
+}
+</script>
 </head>
 <header>
   <nav role="navigation">
@@ -32,50 +42,53 @@
     <p> <img src="../assets/images/destinations/kanagawa.jpg" align="left" alt="photo Kanagawa"/> <em>Kanagawa-ken</em> is a prefecture of Japan located in the Kantō region of Honshu.[1] Kanagawa Prefecture is the second-most populous prefecture of Japan at 9,058,094 (1 October 2015) and has a geographic area of 2,415 km2 (932 sq mi). Kanagawa Prefecture borders Tokyo to the north, Yamanashi Prefecture to the northwest, and Shizuoka Prefecture to the west. Kanagawa Prefecture is part of the Greater Tokyo Area, the most populous metropolitan area in the world, with Yokohama and many of its cities being major commercial hubs and southern suburbs of Tokyo. </p>
     <a href="https://www.google.com/maps/place/Kanagawa,+Japan/@35.400766,139.3757787,9z/data=!3m1!4b1!4m5!3m4!1s0x601854c7fb67d4ab:0x11f79cd042272356!8m2!3d35.4913535!4d139.284143" target="_blank"> <img src="../assets/images/destinations/kanagawa.png" alt="capture d'écran carte Kanagawa"> </a> </div>
 </div>
-    <div class="container-bottom">
-<footer>
-  <section class="footer-social">
-    <ul>
-      <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
-      <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
-      <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
-    </ul>
-  </section>
-<!--         -->
-  <section class="footer-main">
-    <div class="footer-item">
-      <h4>Site Map</h4>
-                <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="../aboutus.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>75 Avenue du Talent</p>
-      <p>11100 NARBONNE</p>
-      <p>+33 4 69 42 07 77</p>
-      <p><strong>FRANCE</strong></p>
-    </div>
-    <div class="footer-item">
-      <h4>Ikigai</h4>
-      <p>541-0057 OSAKA</p>
-      <p>1-5-6 KITA-KYUHOJIMACHI</p>
-      <p>CHUO-KU</p>
-      <p><strong>JAPON</strong></p>
-    </div>
-  </section>
-  <!-- -->
-        <section class="footer-legal">
+<div class="container-bottom">
+  <footer>
+    <section class="footer-social">
+      <ul>
+        <li><img src="../assets/images/Icon_Facebook.png" alt="Facebook" /></li>
+        <li><img src="../assets/images/Icon_Tumblr.png" alt="Tumblr" /></li>
+        <li><img src="../assets/images/Icon_Instagram.png" alt="Instagram" /></li>
+      </ul>
+    </section>
+    <!--         -->
+    <section class="footer-main">
+      <div class="footer-item">
+        <h4>Site Map</h4>
         <ul>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li>&copy; 2020 Copyright Simplon Galaxy</li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="../aboutus.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-      </section>
-</footer>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>75 Avenue du Talent</p>
+        <p>11100 NARBONNE</p>
+        <p>+33 4 69 42 07 77</p>
+        <p><strong>FRANCE</strong></p>
+      </div>
+      <div class="footer-item">
+        <h4>Ikigai</h4>
+        <p>541-0057 OSAKA</p>
+        <p>1-5-6 KITA-KYUHOJIMACHI</p>
+        <p>CHUO-KU</p>
+        <p><strong>JAPON</strong></p>
+      </div>
+    </section>
+    <!-- -->
+    <section class="footer-legal">
+      <ul>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li>&copy; 2020 Copyright Simplon Galaxy</li>
+      </ul>
+    </section>
+  </footer>
 </div>
-    <script src="../assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
+<script type="text/javascript"> 
+ChangeIt();
+</script>
 </html>
